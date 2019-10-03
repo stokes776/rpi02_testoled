@@ -1,5 +1,7 @@
 FROM ubuntu
 
+RUN [ "cross-build-start" ]
+
 WORKDIR /usr/src/app
 
 RUN apt update
@@ -12,3 +14,5 @@ RUN pip3 install adafruit-circuitpython-ssd1306
 COPY . .
 
 CMD modprobe i2c-dev && python3 stats.py
+
+RUN [ "cross-build-end" ]
