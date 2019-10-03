@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM balenalib/raspberry-pi-python
 
 RUN [ "cross-build-start" ]
 
