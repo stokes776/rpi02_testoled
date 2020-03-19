@@ -21,4 +21,4 @@ docker run --privileged myimage
 
 This will expose all of /dev to your container, and remove other restrictions as well (e.g., you will be able to change the network configuration in the container and mount new filesystems).
 
-EDIT
+EDIT2
